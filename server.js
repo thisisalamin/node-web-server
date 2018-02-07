@@ -54,6 +54,7 @@ app.get('/contact',(req,res)=>{
 		footerText : new Date().getFullYear()
 	});
 });
+
 app.listen(port,()=>{
 	console.log(`Server is up on port ${port}`);
 });
