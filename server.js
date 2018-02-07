@@ -47,6 +47,13 @@ app.get('/maintain',(req,res)=>{
 		footerText : new Date().getFullYear()
 	});
 });
+
+app.get('/contact',(req,res)=>{
+	res.render('contact.hbs',{
+		titlePage : 'Under construction',
+		footerText : new Date().getFullYear()
+	});
+});
 app.listen(port,()=>{
 	console.log(`Server is up on port ${port}`);
 });
